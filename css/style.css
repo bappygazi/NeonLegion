@@ -1,0 +1,266 @@
+/*common part css*/
+* {
+    margin: 0;
+    outline: 0;
+    padding: 0;
+}
+
+img {
+    border: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+@font-face {
+    src: url(../fonts/Hypers\ Techno.ttf);
+    font-family: hypers-techno;
+}
+
+@font-face {
+    src: url(../fonts/MBF\ Alva.ttf);
+    font-family: mbf-alva;
+}
+
+@font-face {
+    src: url(../fonts//SailecMedium.ttf);
+    font-family: Sailec-Medium;
+}
+
+@font-face {
+    src: url(../fonts//SailecRegular.ttf);
+    font-family: Sailec-Regular;
+}
+
+/* navbar part start  */
+.navbar-nav .nav-item .nav-link i {
+    font-size: 45px;
+}
+
+/* banner part start */
+#banner {
+    padding-top: 150px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/banner.png);
+}
+
+.banner-text p {
+    font-size: 1.125rem;
+    padding-right: 100px;
+    font-family: Sailec-Medium;
+}
+
+.banner-time h3 {
+    color: #EA0A87;
+    font-size: 3.438rem;
+    font-family: mbf-alva;
+}
+
+.banner-time h3::before {
+    top: -3px;
+    left: -4px;
+    color: #ffffff;
+    position: absolute;
+    content: '07:23:00:00';
+}
+
+.banner-img {
+    bottom: -40px;
+}
+
+#about_bitmap {
+    background-color: #070827;
+}
+
+/* battle part css */
+#battle {
+    padding: 90px 0;
+    background-color: #010012;
+}
+
+.battle-text h4 {
+    font-size: 1.75rem;
+    font-family: hypers-techno;
+}
+
+.battle-text p {
+    padding-right: 85px;
+    font-size: 0.875rem;
+    font-family: Sailec-Regular;
+}
+
+/* road map part css */
+#raod-map {
+    padding-top: 100px;
+    padding-bottom: 45px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/roadmap_banner.png);
+}
+
+.roadMap-header h3 {
+    color: #EA0A87;
+    font-family: hypers-techno;
+}
+
+.roadMap-header h3::before {
+    top: -2px;
+    left: -3px;
+    color: #ffffff;
+    position: absolute;
+    content: 'THE ROADMAP';
+}
+
+.roadMap-item {
+    padding: 40px;
+}
+
+.roadMap-item h4 {
+    color: #EF0A87;
+    font-size: 1.75rem;
+    font-family: hypers-techno;
+    text-shadow: #ef0a87 2px 2px 6px;
+}
+
+.roadMap-item p {
+    font-size: 0.875rem;
+    font-family: Sailec-Regular;
+}
+
+.bg-black {
+    background-color: #010012;
+}
+
+.bg-mirage {
+    background-color: #121224;
+}
+
+.shape-top-left {
+    -webkit-clip-path: polygon(15% 0, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 13%);
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 13%);
+}
+
+.shape-bottom-right {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 87%, 85% 100%, 0 100%, 0 13%);
+    clip-path: polygon(0 0, 100% 0, 100% 87%, 85% 100%, 0 100%, 0 13%);
+}
+
+/* team part css */
+#team {
+    padding: 90px 0;
+    background-color: #070827;
+}
+
+.team-header h3 {
+    color: #EA0A87;
+    font-family: hypers-techno;
+}
+
+.team-header h3::before {
+    top: -2px;
+    left: -3px;
+    color: #ffffff;
+    position: absolute;
+    content: 'THE TEAM';
+}
+
+.team-img {
+    padding: 40px 45px;
+}
+
+.shape-top-bottom {
+    -webkit-clip-path: polygon(15% 0, 100% 0, 100% 87%, 85% 100%, 0 100%, 0 13%);
+    clip-path: polygon(15% 0, 100% 0, 100% 87%, 85% 100%, 0 100%, 0 13%);
+}
+
+.team-item h4 {
+    color: #EF0A87;
+    font-size: 1.75rem;
+    font-family: hypers-techno;
+    text-shadow: #ef0a87 2px 2px 6px;
+}
+
+.team-item p {
+    font-size: 1.125rem;
+    letter-spacing: 6px;
+    font-family: mbf-alva;
+}
+
+
+
+/* Small devices (landscape phones, 767px and up) */
+@media (max-width: 767.98px) {
+    .navbar-toggler i {
+        font-size: 30px;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+        justify-content: center;
+        background-color: #070827;
+    }
+
+    .banner-text p {
+        padding-right: 0px;
+    }
+
+    .banner-text h3 {
+        font-size: 2.2rem;
+    }
+
+    .banner-text h3::before {
+        top: -2px;
+        left: -3px;
+    }
+
+    .navbar-brand {
+        width: 70%;
+    }
+
+    .battle-text p {
+        padding-right: 0;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .navbar-toggler i {
+        font-size: 30px;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+        justify-content: center;
+        background-color: #070827;
+    }
+
+    .banner-text p {
+        padding-right: 0px;
+    }
+
+    .banner-text h3 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Large devices (laptop, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .roadMap-item {
+        padding: 20px;
+    }
+}
